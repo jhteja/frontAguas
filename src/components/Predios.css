@@ -1,0 +1,181 @@
+.predios__encabezado,
+.predios__detalle-encabezado {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.predios__encabezado {
+  margin-bottom: 24px;
+}
+
+.predios__encabezado h2,
+.predios__formulario h3,
+.predios__detalle h3,
+.predios__grupo h4 {
+  margin: 0;
+}
+
+.predios__encabezado p {
+  margin: 6px 0 0;
+  color: #475569;
+}
+
+.predios__busqueda,
+.predios__formulario,
+.predios__detalle {
+  max-width: 760px;
+}
+
+.predios__busqueda label,
+.predios__campos label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.predios__busqueda-campos {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.predios input,
+.predios select {
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  background: #fff;
+  font: inherit;
+}
+
+.predios__busqueda input {
+  width: min(100%, 280px);
+}
+
+.predios button {
+  min-height: 40px;
+  padding: 8px 14px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: #0f766e;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.predios button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.predios__formulario {
+  margin: 24px 0;
+  padding: 20px 0;
+  border-top: 1px solid #cbd5e1;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.predios__campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.predios__direccion {
+  min-width: 0;
+  margin: 18px 0;
+  padding: 12px 16px 0;
+  border: 1px solid #cbd5e1;
+}
+
+.predios__direccion legend {
+  padding: 0 6px;
+  font-weight: 700;
+}
+
+.predios__acciones-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.predios__detalle {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.predios__detalle-encabezado {
+  align-items: center;
+}
+
+.predios__grupo {
+  margin-top: 20px;
+  padding: 16px;
+  border-left: 4px solid #0f766e;
+  background: #f0fdfa;
+}
+
+.predios__grupo p {
+  margin: 8px 0 0;
+}
+
+.predios__datos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 20px 0 0;
+}
+
+.predios__datos div {
+  min-width: 0;
+}
+
+.predios__datos dt {
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.predios__datos dd {
+  margin: 4px 0 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.predios__mensaje {
+  margin: 16px 0 0;
+  color: #166534;
+}
+
+.predios__mensaje--error {
+  color: #b91c1c;
+}
+
+@media (max-width: 640px) {
+  .predios__encabezado,
+  .predios__detalle-encabezado {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .predios__campos,
+  .predios__datos {
+    grid-template-columns: 1fr;
+  }
+
+  .predios__busqueda-campos {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .predios__busqueda input {
+    width: 100%;
+  }
+}

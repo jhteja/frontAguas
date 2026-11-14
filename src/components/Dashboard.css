@@ -1,0 +1,29 @@
+.indicadores-dashboard {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.indicador-dashboard {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.indicador-dashboard--suscriptores {
+  background: #e0f2fe;
+}
+
+.indicador-dashboard--consumo {
+  background: #dcfce7;
+}
+
+.indicador-dashboard--recaudo {
+  background: #fef3c7;
+}
+
+@media (max-width: 640px) {
+  .indicadores-dashboard {
+    flex-direction: column;
+  }
+}
